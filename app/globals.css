@@ -1,0 +1,35 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  font-family: Outfit;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes waving-hand {
+  0%, 100% { transform: rotate(0deg);}
+  10%, 30%, 50%, 70% { transform: rotate(14deg);}
+  20%, 40%, 60% { transform: rotate(-8deg);}
+  80% { transform: rotate(4deg);}
+  90% { transform: rotate(-4deg);}
+}
+.animate-waving-hand {
+  animation: waving-hand 1.5s infinite;
+  transform-origin: 70% 70%;
+}
