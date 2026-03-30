@@ -36,7 +36,9 @@ const Header = () => {
                 <Image src={assets.right_arrow_white} alt='' className='w-4 transition-transform 
                 duration-200 group-hover:translate-x-1'/>
             </a>
-            <a href='/bwu_bta_23_158_Sanket_Maity-08.pdf' download 
+            <a href='/bwu_bta_23_158_Sanket_Maity-08.pdf' download="SANKET MAITY.pdf" 
+               target="_blank" 
+               rel="noopener noreferrer"
             className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 
             transition-transform duration-200 hover:scale-105 hover:border-black dark:text-black dark:bg-white'>
                 Resume
